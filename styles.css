@@ -4,7 +4,8 @@ body {
 }
 
 img {
-  max-width: 500px;
+  max-width: 400px;
+  align-items: center;
 }
 @media (max-width: 627px) {
   img {
@@ -24,6 +25,7 @@ header {
   display: flex;
   gap: 10px;
   list-style-type: none;
+
 }
 
 button {
@@ -39,6 +41,7 @@ button {
 .hero {
   display: grid;
   justify-content: center;
+  
 }
 
 .heroBackground {
@@ -47,7 +50,8 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 250px;
+  
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -58,6 +62,11 @@ button {
 
 .about {
   display: grid;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
   justify-content: center;
 }
 
