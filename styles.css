@@ -42,8 +42,18 @@ button {
 }
 
 .heroBackground {
-  background-image: 'Oversiktsbilete.JPG';
+  background-image: url("Oversiktbilete.JPG");
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .heroBackground {
+    background-attachment: scroll;
+  }
 }
 
 .about {
@@ -54,4 +64,16 @@ button {
 .productContainer {
   display: flex;
   flex-direction: row;
+}
+
+.productOne {
+  max-width: 500px;
+}
+
+.productTwo {
+  max-width: 500px;
+}
+
+.productThree {
+  max-width: 500px;
 }
