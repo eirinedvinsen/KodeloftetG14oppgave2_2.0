@@ -4,8 +4,7 @@ body {
 }
 
 img {
-  max-width: 400px;
-  align-items: center;
+  max-width: 500px;
 }
 @media (max-width: 627px) {
   img {
@@ -25,7 +24,6 @@ header {
   display: flex;
   gap: 10px;
   list-style-type: none;
-
 }
 
 button {
@@ -41,38 +39,41 @@ button {
 .hero {
   display: grid;
   justify-content: center;
-  
 }
 
 .heroBackground {
   background-image: url("Oversiktbilete.JPG");
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat;
   background-size: cover;
-  min-height: 250px;
-  
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media (max-width: 627px) {
   .heroBackground {
-    background-attachment: scroll;
+    max-width: 0px;
   }
 }
+
+.heroInfo {
+  background-color: rgb(0, 44, 0);
+}
+
+
 
 .about {
   display: grid;
   justify-content: center;
 }
 
-h2 {
-  display: flex;
+.productsHeader {
+  display: grid;
   justify-content: center;
 }
 
 .productContainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .productOne {
@@ -85,4 +86,14 @@ h2 {
 
 .productThree {
   max-width: 500px;
+}
+
+h4{
+  font-size: 15px;
+}
+
+.gitHub{
+  filter: opacity(90%);
+  max-width: 300px;
+  
 }
